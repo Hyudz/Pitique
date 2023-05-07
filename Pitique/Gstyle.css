@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins';
+    outline: none;
+}
+
+/* apply sa lahat */
+body{
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    width: 100%;
+    height: 100%;    
+    position: absolute;
+    overflow-x: hidden;
+}
+
+/*Contents (mga pictures na 'to) */
+.wrapper{
+    width: 100%;
+    padding: 30px 9px;
+    text-align: center;
+    margin-right: 100px;
+    background-color: #fff;
+}
+
+img {
+    width: 90%;
+    border-radius: 20px;
+} 
+
+.section-header{
+    text-transform: uppercase;
+    line-height: 150px;
+    padding-bottom: 0px;
+    font-size: 50px;
+    color: #000000;
+    letter-spacing: 8px;
+}
+.content {
+  padding: 10%;
+}
+.content h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.content p {
+  line-height: 1.5;
+}
+.main-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-column-gap: 15px;
+}
+.main-content .box{
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 15px;
+    box-shadow: 15px 15px 40px rgba(235, 232, 232, 0);
+    height: 250px;
+    overflow: hidden;    
+}
+.main-content .box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.main-content .box:hover:before{
+    top: 0;
+    right: calc(100% - 5px);
+    z-index: 10;
+}
+.main-content .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main-content .box .img-text {
+	position: absolute;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(238, 192, 131, 0.725);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 100%;
+	transition: all 0.5s ease-in-out;	
+    border-radius: 20px;
+}
+.main-content .box:hover .img-text{
+    top: 0;
+    right: 0;
+}
+/*Dulo */
+
+/*Main nav to */
+.main {
+    width: 100%;
+    height: 130vh;
+    float: right;
+    position: absolute;
+    background-size: cover; 
+}
+
+h2 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar {
+    width: 1200px;
+    height: 50px;
+    position: absolute;
+    left: 500px;
+    text-align: center;
+    padding-right: 100px;
+    right: 1000px;
+}
+
+.icon {
+    width: 100px;
+    float: left;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 27px;
+    font-family: 'Poppins';
+    padding-left: 40px;
+    float: left;
+    margin-left: 100px;
+    position: absolute;
+    top: 6px;
+    right: 1561px;
+}
+
+.logo a {
+    transition: 0.3s ease-in-out;
+}
+
+.logo a:hover{
+    color: #ecc400;
+}
+
+.menu {
+    width: 100%;
+    float: right;
+    height: 50px;
+    background-color: #9a825f;
+}
+
+ul {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -120px;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 60px;
+    margin-top: 13px;
+    font-size: 15px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-weight:bold;
+    transition: 0.3s ease-in-out;
+    margin-left: auto;
+    margin-right: -10px;
+    padding: 10px;
+    
+}
+
+ul li a:hover{
+    color: #ecc400;
+}
+/*eto yong dulo ng main nav css*/
+
+/* SA NAV BAR DIN YUNG MARGIN */
+#primary_nav_wrap
+{
+	margin-top:15px
+}
+
+/* ETO YUNG SA NAV BAR */
+#primary_nav_wrap ul a
+{
+	display:block;
+	color:#ffffff;
+	text-decoration:none;
+	font-weight: bold;
+    font-size: 15px;
+    line-height: 30px;
+	padding:0 15px;
+	font-family:'Poppins'
+}
+#primary_nav_wrap ul a:hover {
+    color: #ecc400;
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+    left: -100px;
+	margin: 10px;
+    top: -15px;
+	padding: 0;
+}
+
+/* eto yung sa ordered list ng about */
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#37392e00;
+	padding:0
+}
+/* yung sa list naman to */
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:250px
+}
+
+#primary_nav_wrap ul li a {
+    background-color: #9a825f;
+}
+
+/* eto yung pag na-hover tas lalabas yung list sa about */
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block;
+}
+
+/*sa side nav to */
+.container {
+    height: 60.7vh;
+    width: 250px;
+    position: absolute;
+    background: rgba(222, 184, 135, 0.897);
+    z-index: 1;
+    transition: 0.5s ease;
+    transform: translateX(-250px);
+}
+
+.container .head {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+    text-transform: uppercase;
+    background: #4b412f;
+}
+
+ol{
+    display: block;
+    list-style: none;
+}
+
+ol li {
+    display: block;
+    width: 100%;
+}
+
+ol li a {
+    color: white;
+    padding: 15px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+    text-transform: capitalize;
+}
+
+ol li a i {
+    width: 70px;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+ol li:hover a {
+    background: #9a825f;
+    color: rgb(255, 255, 255);
+    letter-spacing: 5px;
+}
+
+input{
+    visibility: hidden;
+    display: none;
+}
+
+span {
+    position: absolute;
+    right: -30px;
+    top: 12px;
+    font-size: 50px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 12px 12px;
+    cursor: pointer;
+    background-image: url(pixil-frame-0\ \(22\).png);
+}
+
+#bars {
+    background-image: url(pixil-frame-0\ \(20\).png);
+}
+
+#check:checked ~ .container {
+    transform: translateX(0);
+}
+
+#check:checked ~ .container #bars{
+    display: none;
+}
+
+#check:checked ~ section {
+    transform: scale(1.2);
+    filter: brightness(20%);
+}
+/*eto yong dulo ng side nav css */
+
+/*Custom scroll-bar */
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background: #30281d00;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #9a825f;
+}
+/*End ng Custom scroll-bar */
+
+/*Full image*/
+#FullImageView {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0);
+    text-align: center;
+    
+}
+
+#FullImage {
+    padding: 30px;
+    max-width: 50%;
+    max-height: 100%;
+}
+
+#CloseButton {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+

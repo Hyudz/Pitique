@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+/* Nag apply sa lahat */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+/* Laman */
+body {
+    overflow-x: hidden;
+}
+
+/* Main Nav. Bar */
+.main {
+    width: 100%;
+    height: 100%;
+    float: right;
+    /* background-image: url("sand.avif"); */
+    position: absolute;
+    background-size:cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+
+.navbar {
+    width: 1200px;
+    height: 50px;
+    position: absolute;
+    left: 500px;
+    text-align: center;
+    padding-right: 100px;
+    right: 1000px;
+}
+
+.icon {
+    width: 100px;
+    float: left;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 27px;
+    font-family: 'Poppins';
+    padding-left: 40px;
+    float: left;
+    margin-left: 100px;
+    position: absolute;
+    top: 6px;
+    right: 1575px;
+}
+
+.logo a {
+    transition: 0.3s ease-in-out;
+}
+
+.logo a:hover{
+    color: #ecc400;
+}
+
+h2 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h5 a {
+    color: #3e3323
+}
+
+.menu {
+    width: 100%;
+    float: right;
+    height: 50px;
+    background-color: #9a825f;
+}
+
+ul {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -120px;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 60px;
+    margin-top: 13px;
+    font-size: 15px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-weight:bold;
+    transition: 0.3s ease-in-out;
+    margin-left: auto;
+    margin-right: -10px;
+    padding: 10px;
+}
+
+ul li a:hover{
+    color: #ecc400;
+}
+
+/* SA NAV BAR DIN YUNG MARGIN */
+#primary_nav_wrap
+{
+	margin-top:15px
+}
+
+/* ETO YUNG SA NAV BAR */
+#primary_nav_wrap ul a
+{
+	display:block;
+	color:#ffffff;
+	text-decoration:none;
+	font-weight: bold;
+    font-size: 15px;
+    line-height: 30px;
+	padding:0 15px;
+	font-family:'Poppins'
+}
+#primary_nav_wrap ul a:hover {
+    color: #ecc400;
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float: right;
+    right: 220px;
+	margin: 10px;
+    top: -15px;
+	padding: 0;
+}
+
+/* eto yung sa ordered list ng about */
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#37392e00;
+	padding:0
+}
+/* yung sa list naman to */
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:250px
+}
+
+#primary_nav_wrap ul li a {
+    background-color: #9a825f;
+}
+
+/* eto yung pag na-hover tas lalabas yung list sa about */
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block;
+}
+
+/* Articles */
+.article {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Poppins';
+    padding-left: auto;
+    margin-left: 370px;
+    position: absolute;
+    top: 90px;
+    left: 0px;
+}
+
+.blog-container {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap-reverse;
+}
+
+.blog-box {
+    width: 250px;
+    background-color: #ffffff7e;
+    border: 0px solid rgb(0, 0, 0);
+    margin: 10px;
+}
+.blog-img {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.blog-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    padding: auto;
+    
+}    
+
+.blog-text {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}   
+
+.blog-container1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: left;
+    position:absolute;
+    top: 150px;
+    left: 90px;
+}
+.blog-container2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: left;
+    position:absolute;
+    top: 150px;
+    left: 360px;
+
+}
+.blog-container3 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: left;
+    position:absolute;
+    top: 150px;
+    left: 630px;
+}
+
+.blog-box:hover{
+    transform: scale(1.05);
+}
+
+.content {
+    width: 500px;
+    height: 2px;
+    margin: 10px;
+    color: #ffffff;
+    position: absolute;
+    top: 160px;
+    display: flex;
+    text-align: justify;
+    margin-left: 190px;
+    margin-top: 70px;
+    right: auto;
+}
+
+.content .par {
+    padding-left: 15px;
+    margin-right: 60px;
+    padding-bottom: 30px;
+    font-family: 'Poppins';
+    letter-spacing: 1.2px;
+    line-height: 10px;
+    position: absolute;
+    display: flex;  
+}
+
+.content h2 {
+    font-family: 'Poppins';
+    font-size: 20px;
+    margin-top: auto;
+    bottom: -46vh;
+    position: absolute;
+    right: auto;
+    display: flex;
+    left: -170px;
+}
+
+/* Footer */
+footer .footer-title{ 
+    font-size: 1.25rem;
+    line-height: -20px;
+    border-left: 3px solid var(--theme-col);
+    padding-left: 1.5rem;
+    position: absolute;
+}
+
+footer .cr-con{
+    background-color: #9a825f;
+    padding: /*1rem 4rem*/30px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 700px;
+    height: 9%;
+}
+
+.row .column {
+    background-color: red;
+    width: auto;
+    border: solid;
+    border-radius: 10px;
+    height: auto;
+}

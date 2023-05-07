@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+/*@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);*/
+
+*{
+    margin: 0; 
+    padding: 0;
+    font-family:'Poppins';
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* Main nav */
+.main {
+    width: 100%;
+    height: 130vh;
+    float: right;
+    position: absolute;
+    background-size: cover;
+    
+}
+
+h2 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar {
+    width: 1200px;
+    height: 50px;
+    position: absolute;
+    left: 500px;
+    text-align: center;
+    padding-right: 100px;
+    right: 1000px;
+}
+
+.icon {
+    width: 100px;
+    float: left;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 27px;
+    font-family: 'Poppins';
+    padding-left: 40px;
+    float: left;
+    margin-left: 100px;
+    position: absolute;
+    top: 6px;
+    right: 1575px;
+}
+
+.logo a {
+    transition: 0.3s ease-in-out;
+}
+
+.logo a:hover{
+    color: #ecc400;
+}
+
+.menu {
+    width: 100%;
+    float: right;
+    height: 50px;
+    background-color: #9a825f;
+}
+
+ul {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -20px;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 60px;
+    margin-top: 13px;
+    font-size: 15px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-weight:bold;
+    transition: 0.3s ease-in-out;
+    margin-left: auto;
+    margin-right: -10px;
+    padding: 10px;
+}
+
+ul li a:hover{
+    color: #ff0000;
+}
+
+/* SA NAV BAR DIN YUNG MARGIN */
+#primary_nav_wrap
+{
+	margin-top:15px
+}
+
+/* ETO YUNG SA NAV BAR */
+#primary_nav_wrap ul a
+{
+	display:block;
+	color:#ffffff;
+	text-decoration:none;
+	font-weight: bold;
+    font-size: 15px;
+    line-height: 30px;
+	padding:0 15px;
+	font-family:'Poppins'
+}
+#primary_nav_wrap ul a:hover {
+    color: #ecc400;
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+    left: -100px;
+	margin: 10px;
+    top: -15px;
+	padding: 0;
+}
+
+/* eto yung sa ordered list ng about */
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#37392e00;
+	padding:0
+}
+/* yung sa list naman to */
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:250px
+}
+
+#primary_nav_wrap ul li a {
+    background-color: #9a825f;
+}
+
+/* eto yung pag na-hover tas lalabas yung list sa about */
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block;
+}
+
+/* Bg color ng Submit */
+:root{
+    --theme-col: #bc7043;
+}
+
+/*Footer Title*/
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+footer{
+    background-image: url(imgs/vn.png);
+    position: static;
+}
+.f-item-con{
+    padding: 15rem 4rem;
+    /* position: relative; */
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 3rem;
+}
+footer .app-name{
+    color: #ebcb9e;
+    border-left: 5px solid var(--theme-col);
+    position: absolute;
+    padding-left: 1.5rem;
+    font-size: 1.880rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    top: 26%;
+}
+.app-name .app-initial{
+    color: var(--theme-col);
+}
+footer .app-info p{
+    color: #D77548;
+    padding-left: 1.65rem;
+}
+
+.content {
+    position: absolute;
+    text-align: justify;
+    margin-left: -2%;
+    left: 5%;
+    font-family: 'Poppins';
+}
+
+footer ul{ 
+    padding-left: 1.5rem;
+    font-family: 'Poppins';
+    color: #C07F28;
+    font-size: 0.875rem/*10%*/;
+    line-height: 50px;
+    margin-top: 10px;
+    margin-bottom: auto;
+    margin: 40px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+footer ul li{ 
+    margin: center 0 10px;
+    cursor: pointer;
+    color: #A3622C;
+    width: auto;
+    margin-bottom: -5px;
+}
+footer ul li:hover{
+    color: #3f352c;
+}
+
+.connect {
+    font-size: 1.25rem;
+    line-height: -10px;
+    color: #D77548;
+    position: absolute;
+    border-left: 4px solid var(--theme-col);
+    padding-left: 6rem;
+    right: 50%;
+    height: 50px;
+    top: 26.5%;
+    margin-left: 30%;
+}
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px 2px;
+    border-radius: 60%;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #997950;
+    color: white;
+    position: absolute;
+    margin-left: 1%;
+    top: 70px;
+  }
+  
+  .fa-twitter {
+    background: #997950;
+    color: white;
+    position: absolute;
+    margin-left: 30%;
+    top: 70px;
+  }
+
+footer .cr-con{
+    background-color: #9a825f;
+    padding: 25px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 2%;
+    top: 780px;
+}
+.g-i-t{
+    display: grid;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    
+}
+.g-i-t .footer-title {
+    font-size: 1.25rem;
+    line-height: -8px;
+    color: #D77548;
+    position: absolute;
+    border-left: 3px solid var(--theme-col);
+    padding-left: 1.5rem;
+    height: 45px;
+    top:22%;
+    margin-left: 0%;
+}
+.g-i-t form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+form .g-inp{
+    padding: .25rem .5rem;
+    font-size: 16px;
+}
+.g-inp textarea{
+    height: 150px;
+}
+.f-btn{
+    padding: .25rem 1rem;
+    background-color: var(--theme-col);
+    border-radius: .25rem;
+    font-size: 16px;
+    color: #423025;
+    font-weight: 500;
+}
+.f-btn:hover{
+    color: #37392E;
+}

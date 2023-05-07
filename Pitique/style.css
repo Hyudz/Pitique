@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Patrick+Hand&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Patrick Hand', cursive;;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url("imgs/bg.png");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.navbar {
+    width: 1200px;
+    height: 35px;
+    margin: auto;
+}
+
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo {
+    color: #64777D;
+    font-size: 40px;
+    font-family: 'Patrick Hand', cursive;
+    padding-left: 20px;
+    float: left;
+    padding-top: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.menu {
+    width: 300px;
+    float: left;
+    height: 100px;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 60px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #C9D6CC;
+    font-family: monospace;
+    font-weight: lighter;
+    transition: 0.3s ease-in-out;
+}
+
+ul li a:hover{
+    color: #C9D6CC;
+}
+
+.search {
+    width: 250px;
+    float: left;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.srch {
+    font-family: 'Courier New';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #C9D6CC;
+    margin-top: 13px;
+    color: #fff;
+    border-right: auto;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5%;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #c9d6cc00;
+    border: 2px solid #C9D6CC;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #000;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.srch:focus {
+    outline: none;
+}
+
+.content {
+    width: 1000px;
+    height: 30px;
+    margin: auto;
+    color: #a9cddd;
+    position: absolute;
+    
+}
+
+.content .par {
+    padding-left: 15px;
+    padding-bottom: 30px;
+    font-family: 'Courier New';
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h2 {
+    font-family: 'Courier New';
+    font-size: 30px;
+    padding-left: 20px;
+    margin-top: 10%;
+    letter-spacing: 2px;
+}
+
+.content .cn {
+    width: 150px;
+    height: 50px;
+    background: #B7D3DF;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.content .cn a {
+    text-decoration: none;
+    color: #000;
+    transition: .2s ease;
+}
+
+.cn:hover {
+    background-color: #fff;
+}

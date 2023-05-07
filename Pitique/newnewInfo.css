@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+/*Main nav to */
+.main {
+    width: 100%;
+    height: 130vh;
+    float: right;
+    position: absolute;
+    background-size: cover; 
+}
+
+h2 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar {
+    width: 1200px;
+    height: 50px;
+    position: absolute;
+    left: 500px;
+    text-align: center;
+    padding-right: 100px;
+    right: 1000px;
+}
+
+.icon {
+    width: 100px;
+    float: left;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 27px;
+    font-family: 'Poppins';
+    padding-left: 40px;
+    float: left;
+    margin-left: 100px;
+    position: absolute;
+    top: 6px;
+    right: 1561px;
+}
+
+.logo a {
+    transition: 0.3s ease-in-out;
+}
+
+.logo a:hover{
+    color: #ecc400;
+}
+
+.menu {
+    width: 100%;
+    float: right;
+    height: 50px;
+    background-color: #9a825f;
+}
+
+ul {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -120px;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 60px;
+    margin-top: 13px;
+    font-size: 15px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-weight:bold;
+    transition: 0.3s ease-in-out;
+    margin-left: auto;
+    margin-right: -10px;
+    padding: 10px;
+    
+}
+
+ul li a:hover{
+    color: #ecc400;
+}
+/*eto yong dulo ng main nav css*/
+
+/* SA NAV BAR DIN YUNG MARGIN */
+#primary_nav_wrap
+{
+	margin-top:15px
+}
+
+/* ETO YUNG SA NAV BAR */
+#primary_nav_wrap ul a
+{
+	display:block;
+	color:#ffffff;
+	text-decoration:none;
+	font-weight: bold;
+    font-size: 15px;
+    line-height: 30px;
+	padding:0 15px;
+	font-family:'Poppins'
+}
+#primary_nav_wrap ul a:hover {
+    color: #ecc400;
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+    left: -100px;
+	margin: 10px;
+    top: -15px;
+	padding: 0;
+}
+
+/* eto yung sa ordered list ng about */
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#37392e00;
+	padding:0
+}
+/* yung sa list naman to */
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:250px
+}
+
+#primary_nav_wrap ul li a {
+    background-color: #9a825f;
+}
+
+/* eto yung pag na-hover tas lalabas yung list sa about */
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block;
+}
+
+/* Mga infogs */
+img {
+    display: block;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Custom scroll-bar */
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background: #30281d00;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #9a825f;
+}
+/*End ng Custom scroll-bar */
+
+/* Footer */
+footer .footer-title{ 
+    font-size: 1.25rem;
+    line-height: -20px;
+    border-left: 3px solid var(--theme-col);
+    padding-left: 1.5rem;
+    position: absolute;
+}
+    
+footer .cr-con{
+    background-color: #9a825f;
+    padding: /*1rem 4rem*/30px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 8%;
+}

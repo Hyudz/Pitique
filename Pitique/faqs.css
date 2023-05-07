@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+@import "compass/css3";
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.main {
+  width: 100%;
+  height: 150vh;
+  float: right;
+  background-position: center;
+  background-size: cover;
+  background-color: #ffffff;
+  position: static;
+}
+
+.navbar {
+  width: 1200px;
+  height: 50px;
+  position: absolute;
+  left: 600px;
+  text-align: center;
+  padding-right: 100px;
+  right: 1000px;
+}
+
+h2 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 27px;
+  font-family: 'Poppins';
+  padding-left: 40px;
+  float: left;
+  margin-left: 100px;
+  position: absolute;
+  top: 6px;
+  right: 1561px;
+}
+
+.logo a {
+  transition: 0.3s ease-in-out;
+}
+
+.logo a:hover{
+  color: #ecc400;
+}
+
+.menu {
+  width: 100%;
+  float: right;
+  height: 50px;
+  background-color: #9a825f;
+}
+
+ul {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -20px;
+}
+
+ul li {
+  list-style: none;
+  margin-left: 60px;
+  margin-top: 13px;
+  font-size: 15px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Poppins';
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  margin-left: -auto;
+  margin-right: -10px;
+  padding: 10px;
+}
+
+ul li a:hover{
+  color: #cda279;
+}
+
+/* SA NAV BAR DIN YUNG MARGIN */
+#primary_nav_wrap
+{
+	margin-top:15px
+}
+
+/* ETO YUNG SA NAV BAR */
+#primary_nav_wrap ul a
+{
+	display:block;
+	color:#ffffff;
+	text-decoration:none;
+	font-weight: bold;
+    font-size: 15px;
+    line-height: 30px;
+	padding:0 15px;
+	font-family:'Poppins'
+}
+#primary_nav_wrap ul a:hover {
+    color: #ecc400;
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+    left: -100px;
+	margin: 10px;
+    top: -15px;
+	padding: 0;
+}
+
+/* eto yung sa ordered list ng about */
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#37392e00;
+	padding:0
+}
+
+/* yung sa list naman to */
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:250px
+}
+
+#primary_nav_wrap ul li a {
+    background-color: #9a825f;
+}
+
+/* eto yung pag na-hover tas lalabas yung list sa about */
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block;
+}
+
+.quest {
+  color: #bc7043;
+  font-size: 50px;
+  font-family: 'Poppins';
+  float: right;
+  position: absolute;
+  bottom: 660px;
+  right: 800px;
+}
+
+.container {
+    padding: 200px;
+  }
+  
+.faq-drawer {
+  margin-bottom: 30px;
+  color: #48260D; /*Pecan*/
+}
+
+.faq-drawer__content-wrapper {
+  font-size: 1.25em;
+  line-height: 1.4em;
+  color: #997950; /*Tortilla*/
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.25s ease-in-out;
+}
+
+.faq-drawer__title {
+  border-top: #A06A4A 2px solid; /*Coffee Palette*/
+  cursor: pointer;
+  display: block;
+  font-size: 1.75em;
+  font-weight: 700;
+  padding: 30px 0 0 0;
+  position: relative;
+  margin-bottom: 0;
+  transition: all 0.25s ease-out;
+}
+
+.faq-drawer__title::after {
+  border-style: solid;
+  border-width: 1px 1px 0 0;
+  content: " ";
+  display: inline-block;
+  float: none;
+  height: 10px;
+  left: 2px;
+  position: relative;
+  right: 20px;
+  top: 2px;
+  transform: rotate(135deg);
+  transition: 0.35s ease-in-out;
+  vertical-align: top;
+  width: 10px;
+}
+
+.faq-drawer__title:hover { 
+  color: #d0a175;
+}
+
+.faq-drawer__trigger:checked
+  + .faq-drawer__title
+  + .faq-drawer__content-wrapper {
+  max-height: 350px;
+}
+
+.faq-drawer__trigger:checked + .faq-drawer__title::after {
+  transform: rotate(-45deg);
+  transition: 0.25s ease-in-out;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 80px;
+  }
+}
+   
+/* Footer */
+footer .footer-title{ 
+    font-size: 1.25rem;
+    line-height: -20px;
+    /*border-left: 3px solid var(--theme-col);*/
+    padding-left: 1.5rem;
+    position: absolute;
+}
+
+footer .cr-con {
+    background-color: #9a825f;
+    padding: 30px;
+    position: static;
+    text-align: center;
+    margin-top: 30px;
+    height: 80px;
+}
+
+/*Custom scroll-bar */
+::-webkit-scrollbar{
+  width: 15px;
+}
+
+::-webkit-scrollbar-track{
+  background: #30281d00;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #9a825f;
+}
+/*End ng Custom scroll-bar */
